@@ -278,27 +278,3 @@ class PasswordCreator:
         This function will just print all allowed chars on the creation of the password
         """
         print(self.allowed_chars)
-
-
-passcodes_low = []
-passcodes_mid = []
-passcodes_high = []
-
-for i in range(1000):
-    passcodes_low.append(PasswordCreator(length=2, strength="low").create_password())
-
-for i in range(1000):
-    passcodes_mid.append(PasswordCreator(length=3, strength="mid").create_password())
-
-for i in range(1000):
-    passcodes_high.append(PasswordCreator(length=4, strength="high").create_password())
-
-print(passcodes_low)
-print("\n")
-
-print(passcodes_mid)
-print("\n")
-
-print(passcodes_high)
-print("\n")
-print("\n")
